@@ -68,6 +68,7 @@
     </servlet>
 
 
+
     <!-- 拦截设置 -->
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
@@ -95,7 +96,7 @@
 
     <servlet-mapping>
         <servlet-name>jersey-serlvet</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
 
 

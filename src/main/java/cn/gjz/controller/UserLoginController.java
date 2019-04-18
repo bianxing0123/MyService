@@ -32,7 +32,7 @@ public class UserLoginController {
     @Path("/userLogin")
     public Response userLogin(User in){
 
-        System.out.println("I'm here!");
+        System.out.println("UserLoin!");
 
         System.out.println(in.toString());
 

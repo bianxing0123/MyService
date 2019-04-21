@@ -1,10 +1,13 @@
 package cn.gjz.webapi;
 
+import cn.gjz.controller.FoodDetailController;
 import cn.gjz.controller.ShopInfoController;
 import cn.gjz.controller.UserLoginController;
 import cn.gjz.controller.hello;
+import cn.gjz.service.FoodDetailService;
 import cn.gjz.service.ShopInfoService;
 import cn.gjz.service.UserLoginService;
+import cn.gjz.service.serviceImp.FoodDetailServiceImp;
 import cn.gjz.service.serviceImp.ShopInfoServiceImp;
 import cn.gjz.service.serviceImp.UserLoginServiceImp;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -30,6 +33,9 @@ public class RestApplication extends ResourceConfig {
         register(ShopInfoController.class);
         register(ShopInfoService.class);
         register(ShopInfoServiceImp.class);
+        register(FoodDetailController.class);
+        register(FoodDetailService.class);
+        register(FoodDetailServiceImp.class);
     }
 
 
